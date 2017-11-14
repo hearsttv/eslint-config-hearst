@@ -9,9 +9,7 @@ module.exports = {
     // common environments for current hearst apps
     // feel free to override
     amd: true,
-    jasmine: true,
     jquery: true,
-    mocha: true,
   },
   globals: {
     sinon: true,
@@ -27,9 +25,7 @@ module.exports = {
         // instead. airbnb style should be followed as closely as possible.
         // We're leveraging the added formatting power of prettier rather than
         // rules like this.
-        bracketSpacing: true,
         singleQuote: true,
-        semi: true,
         trailingComma: 'all',
       },
     ],
@@ -43,9 +39,17 @@ module.exports = {
       // add a common override assuming test files are in `/test` dir
       // and that the application is using chai's assertion library.
       // allows test statements like `expect(foo).to.be.null;` to pass
+      env: {
+        jasmine: true,
+        mocha: true,
+      },
       files: ['test/**/*.js'],
       rules: {
+        'func-names': 'off',
+        'prefer-arrow-callback': 'off',
+        'no-underscore-dangle': 'off',
         'no-unused-expressions': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],
