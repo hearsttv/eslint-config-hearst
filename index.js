@@ -7,7 +7,7 @@ module.exports = {
   ],
   env: {
     // common environments for current hearst apps
-    // feel free to overwrite
+    // feel free to override
     amd: true,
     jasmine: true,
     jquery: true,
