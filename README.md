@@ -18,14 +18,7 @@ autofix a lot of issues that eslint doesn't handle yet.
 ## Install
 
 ```sh
-yarn add --dev \
-  eslint-config-hearst \
-  eslint \
-  prettier \
-  eslint-plugin-prettier \
-  eslint-plugin-import \
-  eslint-config-airbnb-base \
-  eslint-config-prettier
+yarn add --dev eslint eslint-config-hearst
 ```
 
 ## Usage
