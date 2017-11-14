@@ -16,17 +16,18 @@ module.exports = {
   globals: {
     sinon: true,
   },
-  plugins: [
-    'prettier'
-  ],
+  plugins: ['prettier'],
   rules: {
-    'prettier/prettier': ['error', {
-      // certain rules that we want to line up with airbnb we specify here
-      bracketSpacing: true,
-      singleQuote: true,
-      semi: true,
-      trailingComma: 'all',
-    }],
+    'prettier/prettier': [
+      'error',
+      {
+        // certain rules that we want to line up with airbnb we specify here
+        bracketSpacing: true,
+        singleQuote: true,
+        semi: true,
+        trailingComma: 'all',
+      },
+    ],
 
     // hearst specific
     'import/no-amd': 'off', // allow amd
@@ -34,11 +35,11 @@ module.exports = {
   },
   overrides: [
     {
-      files: [ "tester/**/*.js" ],
+      files: ['test/**/*.js'],
       rules: {
         // allow test statements like `expect(grid.foo).to.be.null;` to pass
         'no-unused-expressions': 'off',
-      }
-    }
+      },
+    },
   ],
 };
