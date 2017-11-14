@@ -1,14 +1,8 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'airbnb-base',
-    // prettier config override's any conflicting rules in airbnb's config
-    'prettier',
-  ],
+  extends: ['eslint:recommended', 'airbnb-base', 'prettier'],
   env: {
     // common environments for current hearst apps
     // feel free to override
-    amd: true,
     jquery: true,
   },
   globals: {
@@ -31,8 +25,9 @@ module.exports = {
     ],
 
     // hearst specific
-    'import/no-amd': 'off', // allow amd
     'no-bitwise': ['error', { allow: ['~'] }], // allow ~ for integer casting
+    'valid-jsdoc': 'error',
+    'require-jsdoc': 'warn',
   },
   overrides: [
     {
