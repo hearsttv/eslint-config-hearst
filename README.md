@@ -18,7 +18,17 @@ autofix a lot of issues that eslint doesn't handle yet.
 ## Install
 
 ```sh
-yarn add --dev eslint eslint-config-hearst
+yarn add --dev eslint
+```
+
+then add the following to your `package.json`:
+
+```json
+"devDependencies": {
+  // ...
+  "eslint-config-hearst": "git+ssh://git@github.com:Hearst-Hatchery/eslint-config-hearst.git#<version>",
+  // ...
+}
 ```
 
 ## Usage
