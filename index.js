@@ -26,8 +26,6 @@ module.exports = {
 
     // hearst specific
     'no-bitwise': ['error', { allow: ['~'] }], // allow ~ for integer casting
-    'valid-jsdoc': 'error',
-    'require-jsdoc': 'warn',
   },
   overrides: [
     {
