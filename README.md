@@ -1,19 +1,7 @@
 # eslint-config-hearst
 
 This package provides a consistent ESLint configuration for Hearst Projects. It
-uses a combination of [airbnb](https://github.com/airbnb/javascript) &
-[Prettier](https://prettier.io/).
-
-Using the combination is the ideal solution. While it adds more dependencies, it
-covers many more scenarios. Prettier is much less overarching (it doesn't care
-about a lot of eslints "code quality" rules, just formatting rules ... see this
-doc https://prettier.io/docs/en/comparison.html).
-
-There are conflicting rules between Prettier's defaults (double quotes, no
-trailing commas) that are overridden here in order to fall in line with airbnb.
-HOWEVER where Prettier really shines is their ability to format/fix lines that
-are greater than 80 columns in an extremely consistant way, and its ability to
-autofix a lot of issues that eslint doesn't handle yet.
+extends from [airbnb's configuration](https://github.com/airbnb/javascript).
 
 ## Install
 
@@ -25,9 +13,7 @@ then add the following to your `package.json`:
 
 ```json
 "devDependencies": {
-  // ...
   "eslint-config-hearst": "git+ssh://git@github.com:Hearst-Hatchery/eslint-config-hearst.git#<version>",
-  // ...
 }
 ```
 

@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint:recommended', 'airbnb-base', 'prettier'],
+  extends: ['eslint:recommended', 'airbnb-base'],
   env: {
     // common environments for current hearst apps
     // feel free to override
@@ -8,23 +8,9 @@ module.exports = {
   globals: {
     sinon: true,
   },
-  // when running `eslint --fix` this plugin steps in and runs prettier on the
-  // code first, then it runs `eslint --fix`
-  plugins: ['prettier'],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        // override prettier's default rules that we want to line up with airbnb
-        // instead. airbnb style should be followed as closely as possible.
-        // We're leveraging the added formatting power of prettier rather than
-        // rules like this.
-        singleQuote: true,
-        trailingComma: 'all',
-      },
-    ],
-
     // hearst specific
+    // TODO: add js-doc rules & fixes
     'no-bitwise': ['error', { allow: ['~'] }], // allow ~ for integer casting
   },
   overrides: [
