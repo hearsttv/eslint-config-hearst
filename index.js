@@ -24,6 +24,7 @@ module.exports = {
       },
       files: ['test/**/*.js'],
       rules: {
+        'no-console': 'off',
         'func-names': 'off',
         'prefer-arrow-callback': 'off',
         'no-underscore-dangle': 'off',
