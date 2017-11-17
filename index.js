@@ -9,6 +9,9 @@ module.exports = {
     sinon: true,
   },
   rules: {
+    // override for prettier
+    'function-paren-newline': 'off',
+
     // hearst specific
     // TODO: add js-doc rules & fixes
     'no-bitwise': ['error', { allow: ['~'] }], // allow ~ for integer casting
