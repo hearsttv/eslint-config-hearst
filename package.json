@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-hearst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Chris O'Donnell <chrisodonnell@hearst.com>",
+  "private": true,
+  "dependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 4"
+  },
+  "scripts": {
+    "fix": "eslint --fix .",
+    "lint": "eslint ."
+  }
+}
